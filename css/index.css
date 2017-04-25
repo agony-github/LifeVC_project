@@ -1,0 +1,215 @@
+body{
+    background-color: #f0f0f0;
+}
+#app{
+    width: 100%;
+    height: 100%;
+}
+/*html, body{*/
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+/*}*/
+/*home首页的样式*/
+#home_page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#home_page .home_data{
+    width: 100%;
+    margin: 0 auto;
+}
+.home_data .header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 111;
+}
+.wrap-heard .header-Ico{
+    width: 100%;
+    height: 48px;
+    background: url('../img/data-image-png;base….png') no-repeat;
+    background-size: 50%;
+    background-position: 50%;
+    background-color: #88C13E;
+}
+.wrap-heard .head-typeimg{
+    display: block;
+    width: 43.98px;
+    height: 43.98px;
+    float: right;
+    position: absolute;
+    top:0;
+    right: 0;
+    background: url("../img/data-image-png;base… (1).png") no-repeat;
+    background-size: 45%;
+    background-position: 50%;
+}
+/*home中的导航显示*/
+.menuNavNewProductPanel .menuNavNewProduct{
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+    background-color: white;
+}
+.menuNavNewProduct .selected{
+    border-bottom: 2px solid #80b532;
+}
+.menuNavNewProduct li{
+    width: 80px;
+    line-height: 48px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    border-bottom: 2px solid #dddddd;
+}
+.menuNavNewProduct li a{
+    display: block;
+    font-size: 0.7rem;
+    height: 45.59px;
+    color: #333;
+}
+/*home_body显示*/
+.home_body .lfmasklayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.home_body .lf-loading{
+    width: 100%;
+    margin-top: -39px;
+    height: 67px;
+    position: fixed;
+    top: 50%;
+    text-align: center;
+    z-index: 999;
+}
+/*loading加载*/
+.lf-loading .lf-circles{
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+    color:#009c42;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    border-radius: 60px;
+    border: 2px solid #009c42;
+    border-top-color: #e4e4e4;
+    transform-origin: 50% 50%;
+    animation: rotate 1s infinite linear;
+    -webkit-animation: rotate 1s infinite linear;
+}
+/*轮播图*/
+.home_body .mint-loadmore-top{
+    margin-top: 46px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.swiper-container{
+    position: relative;
+    overflow: hidden;
+}
+.mint-loadmore-top .mint-loadmore-text{
+   font-size: 15px;
+}
+.page-loadmore-wrapper .swiper-wrapper{
+    /*待定*/
+    width: 700%;
+}
+.swiper-wrapper .swiper-slide{
+    /*待定*/
+    width: 375px;
+    float: left;
+}
+.swiper-wrapper .swiper-slide img{
+    /*待定*/
+    width:375px;
+    height: 250px;
+}
+.mint-loadmore-content .swiper-pagination{
+    position: absolute;
+    left: 130px;
+    bottom: 15px;
+}
+.mint-loadmore-content .banner{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: gainsboro;
+    border-radius: 8px;
+    float: left;
+    margin-left: 8px;
+}
+/*内容图*/
+.mint-loadmore-content .item-combo{
+    margin-top: -3px;
+    margin-bottom: 13px;
+}
+.mint-loadmore-content .img-wrap img{
+    width: 100%;
+}
+.home_body .loadingAlert{
+    text-align: center;
+    padding-bottom: 16px;
+}
+.home_body .loadingAlert span{
+    color: #888;
+    font-size: 14px;
+    vertical-align: middle;
+}
+/*home的footer部分*/
+#footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 222;
+    width: 100%;
+}
+#footer ul{
+    overflow: hidden;
+    background-color: #f8f8f8;;
+}
+#footer li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 12px;
+}
+#footer li .ico{
+    width: 100%;
+    height: 40px;
+    background-size: 28%;
+    background-position: 50%;
+}
+#footer li span{
+    display: block;
+    margin-top: -4px;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+/*footer里面的图标*/
+#footermenuNav .homeico{
+    background: url("../img/shouye.png") no-repeat;
+}
+#footermenuNav .typeico{
+    background: url("../img/all.png") no-repeat;
+}
+#footermenuNav .strollico{
+    background: url("../img/em0.png") no-repeat;
+}
+#footermenuNav .shoppingcartico{
+    background: url("../img/seller.png") no-repeat;
+}
+#footermenuNav .accountcenterico{
+    background: url("../img/my.png") no-repeat;
+}
