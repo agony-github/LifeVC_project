@@ -2,10 +2,664 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>vue_app</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/demo.css">
   </head>
   <body>
     <app></app>
     <!-- built files will be auto injected -->
+
+    <div id="app">
+      <!--闲逛-->
+      <div class="stroll" style="display: none">
+        <div>
+          <!--回到顶部-->
+          <div class="toTop"></div>
+          <div class="home_body">
+            <div>
+              <!--遮罩-->
+              <div class="lfmasklayer" style="display: none;"></div>
+              <!--loading加载-->
+              <div class="lf-loading" style="display: none;">
+                <i class="lf-circles">丽芙家居</i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <header id="topBa" class="header">
+              <!--公共样式-->
+              <div class="header-content">
+                <p class="header-title">闲逛</p>
+              </div>
+            </header>
+            <div class="page-loadmore-wrapper">
+              <div class="mint-loadmore-content">
+                <div class="mint-loadmore-top">
+                  <span class="mint-loadmore-text">下拉刷新</span>
+                </div>
+                <div class="clearFix">
+                  <div class="stroll-all-item left">
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="./src/image/xian01.jpg">
+                        <span class="tag-new">NEW</span>
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">多用途清洁刷</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥10</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian02.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">抽真空防潮垫</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian03.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">双锁扣真空保鲜袋</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian04.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">可挂式防尘防潮收纳袋</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian05.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">可挂式防潮除湿剂（8袋）</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian06.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">深层洁面魔芋</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian07.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">金刚纱强力去污</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="./src/image/xian01.jpg">
+                        <span class="tag-new">NEW</span>
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">多用途清洁刷</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥10</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian02.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">抽真空防潮垫</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian03.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">双锁扣真空保鲜袋</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian04.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">可挂式防尘防潮收纳袋</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian05.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">可挂式防潮除湿剂（8袋）</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian06.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">深层洁面魔芋</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian07.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">金刚纱强力去污</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian05.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">可挂式防潮除湿剂（8袋）</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian06.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">深层洁面魔芋</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian07.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">金刚纱强力去污</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥20</span>
+                        <span class="comment">月销11730件</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stroll-all-item right">
+                    <div class="stroll-item">
+                      <span class="menu_a">新价格</span>
+                      <span class="menu_b">今日新品</span>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="./src/image/xian08.jpg">
+                        <span class="tag-new">NEW</span>
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">单手开盖运动杯</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥10</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian09.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">离子洗衣粉</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥80</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian10.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">除菌泡沫洗手液</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥9</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian11.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">高级液体护理鞋油</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥18</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian12.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">无痕简约衣架（5只）</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥10</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian13.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">马桶除菌去污剂</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥16</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian10.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">天然铁木加长筷</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥16</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian15.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">马桶除污剂</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥16</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <span class="menu_a">新价格</span>
+                      <span class="menu_b">今日新品</span>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="./src/image/xian08.jpg">
+                        <span class="tag-new">NEW</span>
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">单手开盖运动杯</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥10</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian09.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">离子洗衣粉</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥80</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian10.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">除菌泡沫洗手液</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥9</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian11.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">高级液体护理鞋油</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥18</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian12.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">无痕简约衣架（5只）</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥10</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian13.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">马桶除菌去污剂</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥16</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian10.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">天然铁木加长筷</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥16</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                    <div class="stroll-item">
+                      <div class="stroll-item-layer">
+                        <img src="../vue_app/src/image/xian15.jpg">
+                      </div>
+                      <h3 class="stroll-item-title">
+                        <a href="##">马桶除污剂</a>
+                      </h3>
+                      <div class="stroll-price-bar">
+                        <span class="price">￥16</span>
+                        <span class="comment">月销11717件</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stroll-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_body">
+          <div>
+            <!--遮罩-->
+            <div class="lfmasklayer" style="display: none;"></div>
+            <!--loading加载-->
+            <div class="lf-loading" style="display: none;">
+              <i class="lf-circles">丽芙家居</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--购物车-->
+      <div class="shopcart" style="display:none;">
+        <div>
+          <div class="home_body">
+            <div>
+              <!--遮罩-->
+              <div class="lfmasklayer" style="display: none;"></div>
+              <!--loading加载-->
+              <div class="lf-loading" style="display: none;">
+                <i class="lf-circles">丽芙家居</i>
+              </div>
+            </div>
+          </div>
+          <header class="header">
+            <div class="header-content">
+              <span class="btn-back"></span>
+              <p class="header-title">购物车</p>
+            </div>
+            <div class="header-login">
+              <a href="#/login?redirect=/cart" class="btn-login">
+                登陆
+              </a>
+              <span class="login-tip">
+                你可以在登录后同步电脑与手机购物车中的商品
+              </span>
+            </div>
+          </header>
+          <div class="wrap-content wrap-cart-cont  wrap-cart-login">
+            <div class="page-loadmore-wrapper">
+              <div class="mint-loadmore">
+                <div class="mint-loadmore-content">
+                  <div class="mint-loadmore-top">
+                    <span class="mint-loadmore-text">下拉刷新</span>
+                  </div>
+                  <div class="header-exchange-wrap">
+                    <form class="header-exchange">
+                      <input type="text" minlength="15"
+                             placeholder="礼品兑换处，请输入兑换码"
+                            class="exch-ipt"
+                            align="middle">
+                      <input type="button" value="兑换" class="exch-btn">
+                    </form>
+                  </div>
+                  <div id="wrap-nodata">
+                    <div class="carts-img">
+                      <img src="../vue_app/src/image/shopcart.png">
+                    </div>
+                    <div class="carts-text font-medium">
+                      <p>您的购物车还是空荡荡的</p>
+                    </div>
+                    <div class="carts-link font-medium">
+                      <a href="##">赶紧去逛逛</a>
+                    </div>
+                    <div class="wrap-cart-assem cart-empty-recom">
+                      <div class="cart-assem-title">
+                        <p>Rico.S为你精心推荐</p>
+                      </div>
+                      <div class="cart-assem-list">
+                        <ul>
+                          <li class="cart-assem-item">
+                            <a href="##">
+                              <img src="../vue_app/src/image/sjop01.jpg">
+                            </a>
+                            <p class="title">可降解环保垃圾袋</p>
+                            <p class="price">￥9</p>
+                          </li>
+                          <li class="cart-assem-item">
+                            <a href="##">
+                              <img src="../vue_app/src/image/shop02.jpg">
+                            </a>
+                            <p class="title">自黏式缝隙膜贴</p>
+                            <p class="price">￥9</p>
+                          </li>
+                          <li class="cart-assem-item">
+                            <a href="##">
+                              <img src="../vue_app/src/image/shop03.jpg">
+                            </a>
+                            <p class="title">厨房防油污贴纸（5张）</p>
+                            <p class="price">￥9</p>
+                          </li>
+                          <li class="cart-assem-item">
+                            <a href="##">
+                              <img src="../vue_app/src/image/shop04.jpg">
+                            </a>
+                            <p class="title">全棉超软加厚毛巾</p>
+                            <p class="price">￥9</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_body">
+          <div>
+            <!--遮罩-->
+            <div class="lfmasklayer" style="display: none;"></div>
+            <!--loading加载-->
+            <div class="lf-loading" style="display: none;">
+              <i class="lf-circles">丽芙家居</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--账户中心-->
+      <div class="center">
+        <div>
+          <div class="home_body">
+            <div>
+              <!--遮罩-->
+              <div class="lfmasklayer" style="display: none;"></div>
+              <!--loading加载-->
+              <div class="lf-loading" style="display: none;">
+                <i class="lf-circles">丽芙家居</i>
+              </div>
+            </div>
+          </div>
+          <header class="header">
+            <div class="header-content">
+              <p class="header-title">账户中心</p>
+              <span>设置</span>
+            </div>
+          </header>
+          <div class="mint-loadmore">
+            <div class="mint-loadmore-content">
+              <div class="mint-loadmore-content">
+                <div class="mint-loadmore-top">
+                  <span class="mint-loadmore-text">下拉刷新</span>
+                </div>
+                <div class="acct-user-wrap">
+                  <div class="acct-nolog">
+                    <span class="state">您还未登陆</span>
+                    <div class="btn-entry">
+                      <a href="#/login" class="font-large">登陆</a>
+                      <span class="split"></span>
+                      <a href="#/register" class="font-large">注册</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard-order life-dashboard-order">
+                  <ul>
+                    <li>
+                      <a href="##">
+                        <span class="item-ico"></span>
+                        <span class="item-title">待支付</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="##">
+                        <span class="item-ico"></span>
+                        <span class="item-title">待发货</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="##">
+                        <span class="item-ico"></span>
+                        <span class="item-title">待收货</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_body">
+          <div>
+            <!--遮罩-->
+            <div class="lfmasklayer" style="display: none;"></div>
+            <!--loading加载-->
+            <div class="lf-loading" style="display: none;">
+              <i class="lf-circles">丽芙家居</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+
+
+<script type="text/javascript">
+  // rem适配
+  (function () {
+    var styleNode = document.createElement('style')
+    var width = document.documentElement.clientWidth
+    styleNode.innerHTML = 'html{font-size:'+ width/16+'px}'
+    document.head.appendChild(styleNode)
+  })()
+</script>
 </html>
