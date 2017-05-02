@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/vue-app2_black" libraries="{Actual_Project/vue-app2_black/node_modules}" />
+    <file url="file://$PROJECT_DIR$/vue_app" libraries="{Actual_Project/vue_app/node_modules}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
   </component>
 </project>

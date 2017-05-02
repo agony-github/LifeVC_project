@@ -1,8 +1,8 @@
 {
-  "name": "vue_app",
+  "name": "project_vue",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "zxfjd3g <258147149@qq.com>",
+  "author": "hello",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

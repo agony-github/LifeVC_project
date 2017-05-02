@@ -16,7 +16,7 @@ body{
     height: 100%;
     position: relative;
 }
-#home_page .home_data{
+.home_data{
     width: 100%;
     margin: 0 auto;
 }
@@ -84,34 +84,59 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0,0,0,.6);
 }
 .home_body .lf-loading{
-    width: 100%;
-    margin-top: -39px;
-    height: 67px;
     position: fixed;
-    top: 50%;
     text-align: center;
-    z-index: 999;
+    top: 48%;
+    left: 0;
+    width: 100%;
+    height: 60px;
 }
 /*loading加载*/
 .lf-loading .lf-circles{
+    display: inline-block;
     width: 60px;
     height: 60px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 60px;
-    color:#009c42;
-    display: inline-block;
-    position: relative;
-    top: 0;
-    border-radius: 60px;
     border: 2px solid #009c42;
     border-top-color: #e4e4e4;
-    transform-origin: 50% 50%;
-    animation: rotate 1s infinite linear;
-    -webkit-animation: rotate 1s infinite linear;
+    border-radius: 50%;
+    -webkit-animation: rotate 1s infinite linear
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(60deg);
+    }
+    20%{
+        transform: rotate(120deg);
+    }
+    40%{
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: rotate(240deg);
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.lf-loading .iconfont{
+    position: absolute;
+    top: 13px;
+    left: 158px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url("../vue_app/src/image/vc.png") no-repeat;
+    background-size: 47px 37px;
+    background-position: 50% 0;
 }
 /*轮播图*/
 .mint-loadmore-top{
@@ -247,6 +272,9 @@ body{
     color: #fff;
     text-align: center;
 }
+#wrap{
+    position: relative;
+}
 .search-panel{
     padding: 6px 12px;
     background-color: #f0f0f0;
@@ -263,6 +291,7 @@ body{
     font-family: Microsoft YaHei;
     text-align: center;
     outline: none;
+    z-index: 5;
 }
 /*input字体的样式*/
 .sch-cancel{
@@ -272,6 +301,12 @@ body{
     color: #009c42;
     background-color: transparent;
     float: right;
+    outline: none;
+}
+#btnCancel{
+    position: absolute;
+    top: 5px;
+    right: 15px;
 }
 .changeStyle:focus{
     width: 88%;
